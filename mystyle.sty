@@ -13,15 +13,20 @@
 \usepackage[pdftex]{graphicx}
 \usepackage{floatrow,floatflt}
 \usepackage{wrapfig}
+\usepackage{amssymb}
 
 
-\usepackage[labelsep=period]{caption}
+\usepackage[format=plain,labelsep=endash]{caption}
 
 
 \usepackage[a4paper,left=25mm,right=15mm,top=25mm,bottom=20mm,headsep=3mm,headheight=35mm]{geometry}
 
 
 \usepackage{fancybox,fancyhdr}
+
+\fancypagestyle{titlepage}{
+\fancyfoot[C]{Москва, 2016 г.}}
+
 \pagestyle{fancy}
 \fancyhead[R]{АВТОМАТИЗАЦИЯ \\ КОНСАЛТИНГ}
 \fancyhead[L]{\includegraphics[height=1.64cm,width=3.98cm]{pic/afm}}
@@ -31,6 +36,8 @@
 \fancyfoot[L]{}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{0.5pt}
+
+
 
 \usepackage{indentfirst}
 
@@ -44,3 +51,13 @@
 \sloppy
 \clubpenalty=10000
 \widowpenalty=10000
+
+%создание и автоматическая нумерация списков
+\usepackage{enumitem}
+\renewcommand{\alph}[1]{\asbuk{#1}} % костыль для кирилической нумерации вместо латинской
+
+\setlist{nolistsep} % убираем дополнительные вертикальные отступы вокруг списков
+\setenumerate[1]{label=\alph*), fullwidth, itemindent=\parindent,
+listparindent=\parindent}
+\setenumerate[2]{label=\arabic*), fullwidth, itemindent=\doubleparindent,
+listparindent=\parindent}
