@@ -25,10 +25,10 @@
 \usepackage{fancybox,fancyhdr}
 
 \fancypagestyle{titlepage}{
-\fancyfoot[C]{пїЅпїЅпїЅпїЅпїЅпїЅ, 2017 пїЅ.}}
+\fancyfoot[C]{Москва, 2017 г.}}
 
 \pagestyle{fancy}
-\fancyhead[R]{пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ \\ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ}
+\fancyhead[R]{АВТОМАТИЗАЦИЯ \\ КОНСАЛТИНГ}
 \fancyhead[L]{\includegraphics[height=1.64cm,width=3.98cm]{pic/afm}}
 \fancyhead[C]{}
 
@@ -52,11 +52,11 @@
 \clubpenalty=10000
 \widowpenalty=10000
 
-%пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+%создание и автоматическая нумерация списков
 \usepackage{enumitem}
-\renewcommand{\alph}[1]{\asbuk{#1}} % пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+\renewcommand{\alph}[1]{\asbuk{#1}} % костыль для кирилической нумерации вместо латинской
 
-\setlist{nolistsep} % пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+\setlist{nolistsep} % убираем дополнительные вертикальные отступы вокруг списков
 \setenumerate[1]{label=\alph*), fullwidth, itemindent=\parindent,
 listparindent=\parindent}
 \setenumerate[2]{label=\arabic*), fullwidth, itemindent=\doubleparindent,
