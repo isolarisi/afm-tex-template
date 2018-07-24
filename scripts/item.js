@@ -1,7 +1,7 @@
 // TeXworksScript
 // Title: Insert List
 // Shortcut: Ctrl+Shift+a
-// Description: Insert list item
+// Description: Insert item
 // Author: Rebro Ivan
 // Version: 0.3
 // Date: 2018-07-24

@@ -1,6 +1,6 @@
 // TeXworksScript
 // Title: Insert List
-// Shortcut: Ctrl+Shift+z
+// Shortcut: Ctrl+Shift+q
 // Description: Insert list
 // Author: Rebro Ivan
 // Version: 0.3
