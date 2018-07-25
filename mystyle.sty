@@ -63,3 +63,19 @@
 listparindent=\parindent}
 \setenumerate[2]{label=\arabic*), fullwidth, itemindent=\doubleparindent,
 listparindent=\parindent}
+
+
+\usepackage{caption} % подписи к таблицам в русской типографской традиции
+\DeclareCaptionFormat{GOSTtable}{#2#1 -- #3}
+\DeclareCaptionLabelSeparator{fill}{\hfill}
+\DeclareCaptionLabelFormat{fullparents}{\bothIfFirst{#1}{~}#2}
+\captionsetup[table]{
+     %format=GOSTtable,
+     %font={footnotesize},
+     %labelformat=fullparents,
+     %labelsep=fill,
+     %labelfont=it,
+     %textfont=bf,
+     %justification=centering,
+     singlelinecheck=false
+     }
