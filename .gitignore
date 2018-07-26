@@ -1,3 +1,7 @@
 *.pdf
 *.gz
 main.log
+*.toc
+*.out
+*.docx
+*.aux
