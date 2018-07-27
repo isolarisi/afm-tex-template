@@ -18,11 +18,7 @@
 \usepackage{color}
 \definecolor{greytable}{rgb}{0.850,0.850,0.850}
 
-\usepackage[format=plain,labelsep=endash]{caption}
-
-
 \usepackage[a4paper,left=25mm,right=15mm,top=25mm,bottom=20mm,headsep=3mm,headheight=35mm]{geometry}
-
 
 \usepackage{fancybox,fancyhdr}
 
@@ -64,18 +60,31 @@ listparindent=\parindent}
 \setenumerate[2]{label=\arabic*), fullwidth, itemindent=\doubleparindent,
 listparindent=\parindent}
 
-
-\usepackage{caption} % подписи к таблицам в русской типографской традиции
-\DeclareCaptionFormat{GOSTtable}{#2#1 -- #3}
+\usepackage{caption} % подписи к рисункам в русской типографской традиции
+\DeclareCaptionFormat{GOSTtable}{#1 -- #3}
 \DeclareCaptionLabelSeparator{fill}{\hfill}
-\DeclareCaptionLabelFormat{fullparents}{\bothIfFirst{#1}{~}#2}
+\DeclareCaptionLabelSeparator{dash}{ -- }
+%\DeclareCaptionLabelFormat{fullparents}{\bothIfFirst{#1}{~}#2}
 \captionsetup[table]{
-     %format=GOSTtable,
+     format=GOSTtable,
      %font={footnotesize},
      %labelformat=fullparents,
-     %labelsep=fill,
+     labelsep=dash,
      %labelfont=it,
      %textfont=bf,
-     %justification=centering,
-     singlelinecheck=false
+     position=top,
+     justification=raggedright,
+     singlelinecheck=off
+     }
+     
+ \captionsetup[figure]{
+     format=GOSTtable,
+     %font={footnotesize},
+     %labelformat=fullparents,
+     labelsep=dash,
+     %labelfont=it,
+     %textfont=bf,
+     %position=top,
+     justification=centering,
+     singlelinecheck=off
      }
